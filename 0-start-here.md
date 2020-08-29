@@ -7,4 +7,12 @@
 # /etc/logrotate.conf
  - defaults: weekly, rotate 4, create, include /etc/logrotate.d
 
+# systemd-analyze blame
+ - **apt** - `sudo systemctl stop apt-daily-upgrade apt-daily ; sudo systemctl disable apt-daily-upgrade apt-daily`
+ - **man** - `sudo systemctl stop man-db.timer ; sudo systemctl disable man-db.timer`
+ - **nfs** - `sudo systemctl stop nfs* ; sudo systemctl disable nfsd.service nfs-ganesha-lock.service nfs-idmapd.service nfs-kernel-server.service nfs-mountd.service nfs-server.service`
+ - **samba** - `sudo systemctl stop smbd.service ; sudo systemctl disable smbd.service`
+
+# systemd-analyze critical-chain
+ - for boot services that have to wait on others before they can complete
 
