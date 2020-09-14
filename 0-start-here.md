@@ -3,9 +3,14 @@
  - Linux Mint 20 Ulyana
  - Raspbian 10 Buster
  - Raspberry Pi OS 4.19
+
+# Alpine Linux
+ - docker images
+ - `apk` package manager
+ - basis for many small distros (400-500 Mb, not Gb)
   
 # /etc/logrotate.conf
- - defaults: weekly, rotate 4, create, include /etc/logrotate.d
+ - defaults: weekly, rotate 4, create, include /etc/logrotate.d/*
 
 # systemd-analyze blame
  - **apt** - `sudo systemctl stop apt-daily-upgrade apt-daily ; sudo systemctl disable apt-daily-upgrade apt-daily`
