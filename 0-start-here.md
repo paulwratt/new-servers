@@ -1,3 +1,7 @@
+# Universal changes
+Covering the common service initialization managers (more to come), and generic/base distros. (Open)Suse and BSD Linux if someone has already done a writeup. 
+These are generic things that need to be modified, and where to find the files that need changing. When I get a working install "blob" with networking for Void Linux on ARM (Raspberry Pi) I will add that info too, but its should be similar to Alpine.
+
 # Debian 10 Buster
  - Ubuntu 20.04 LTS Focal Fossa
  - Linux Mint 20 Ulyana
