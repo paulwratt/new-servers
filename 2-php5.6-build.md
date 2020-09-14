@@ -6,6 +6,7 @@ I will try to find a cross platform build configuration suitable for production 
  - (suitable to run [PHP Navigator](http://navphp.sourceforge.net/).)
  - EOL 10 Jan 2019, security updates only, **5.6.40**, last version in Alpine Linux 3.4.
  - must be built by hand [from here](https://www.php.net/releases/#5.6.40) after adding **build-requirements**.
+ - ..
  - build options [from php5 docker files](https://hub.docker.com/r/nyanpass/php5.5).
  - `apk add --no-cache --virtual .php-build-deps $BUILD_DEPS \`
  - ` libfcgi-dev libfcgi0ldbl \`
@@ -16,6 +17,7 @@ I will try to find a cross platform build configuration suitable for production 
  - `	--disable-cgi --enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data \`
  - ` --enable-ftp --enable-mbstring --enable-mysqlnd --enable-sqlite \`
  - `	--with-curl --with-libedit --with-openssl --with-zlib`
+ - ..
  - or build options [taken from a Ubuntu 16.04 install](https://www.howtoforge.com/tutorial/how-to-install-php-5-6-on-ubuntu-16-04/).
  - `./configure --prefix=/opt/php-5.6.30 --with-pdo-pgsql --with-zlib-dir --with-freetype-dir --enable-mbstring \`
  - ` --with-libxml-dir=/usr --enable-soap --enable-calendar --with-curl --with-mcrypt --with-zlib --with-gd \`
@@ -26,7 +28,11 @@ I will try to find a cross platform build configuration suitable for production 
  - ` --with-jpeg-dir=/usr --with-png-dir=/usr --enable-gd-native-ttf --with-openssl \`
  - ` --with-fpm-user=www-data --with-fpm-group=www-data --with-libdir=/lib/x86_64-linux-gnu \`
  - ` --enable-ftp --with-imap --with-imap-ssl --with-gettext --with-xmlrpc --with-xsl --with-kerberos --enable-fpm`
+ - ..
  - or make up build configuration [from older Alpine Wiki](https://wiki.alpinelinux.org/wiki/Nginx_with_PHP#Configuration_of_PHP5).
+ - ..
+ - or reconstruct build configuration [from Raspbian build package](http://mirror.internode.on.net/pub/raspbian/raspbian/pool/main/p/php5/php5_5.6.40+dfsg-0+deb8u12.debian.tar.xz) (see `rules` file).
+ - ..
 
 ## build-requirements
  - (taken from **_php5.5-fpm-alpine-docker_**)
