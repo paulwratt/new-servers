@@ -33,6 +33,8 @@ I will try to find a cross platform build configuration suitable for production 
  - ..
  - or reconstruct build configuration [from Raspbian build package](http://mirror.internode.on.net/pub/raspbian/raspbian/pool/main/p/php5/php5_5.6.40+dfsg-0+deb8u12.debian.tar.xz) (see `rules` file).
  - ..
+ - or from [this old Ubuntu 10.04 Moodle how-to](https://docs.moodle.org/39/en/Compiling_PHP_from_source)
+ - ..
 
 ## build-requirements
  - (taken from **_php5.5-fpm-alpine-docker_**)
